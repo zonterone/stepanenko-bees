@@ -2,7 +2,7 @@
   display: flex;
   max-width: 1200px;
   flex-direction: column;
-  margin: 0 auto 100px;
+  margin: 0 auto 200px;
   padding: 0 20px;
 }
 
@@ -48,6 +48,8 @@
   display: flex;
   text-align: left;
   align-items: center;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .descImage {
@@ -55,6 +57,7 @@
 }
 
 .desc {
+  font-size: 18px;
   margin: 0;
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import About from './components/About/About'
 import Contacts from './components/Contacts/Contacts'
+import Footer from './components/Footer/Footer'
 import Logo from './components/Logo/Logo'
 import Navigation from './components/Navigation/Navigation'
 import Products from './components/Products/Products'
@@ -17,6 +18,7 @@ function App() {
 				<Products />
 				<Videos />
 				<Contacts />
+				<Footer />
 			</div>
 
 		</div>

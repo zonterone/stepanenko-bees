@@ -1,7 +1,43 @@
 .container {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 200px;
+}
+
+.description {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto 100px;
+}
+
+.howToBuy, .delivery {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.howToBuy {
+  margin: 0 0 40px 0;
+}
+
+.descriptionIconWrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.descriptionIcon {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.descriptionHyphen {
+  margin: 0 20px;
+}
+
+.descriptionText {
+  font-size: 14px;
 }
 
 .productsList {

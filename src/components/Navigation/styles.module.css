@@ -11,7 +11,6 @@
 .navList {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-between;
   margin: 0;
   padding: 10px 20px;
