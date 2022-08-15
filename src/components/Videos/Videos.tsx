@@ -9,7 +9,6 @@ function Videos() {
 	const [videos, setVideos] = useState<any>([])
 
 	useEffect(() => {
-		console.log(process.env)
 		fetch(url)
 			.then((res) => {
 				return res.json()
@@ -25,7 +24,7 @@ function Videos() {
 				{videos.map((video) => {
 					return <li key={video.id} className={styles.wrapper}>
 						<div className={styles.videoWrapper}>
-							<iframe className={styles.videoItem} width="100%" height="100%" src={`http://www.youtube.com/embed/${video.contentDetails.videoId}`} frameBorder="0" allowFullScreen></iframe>
+							<iframe className={styles.videoItem} width="100%" height="100%" src={`https://www.youtube.com/embed/${video.contentDetails.videoId}`} frameBorder="0" allowFullScreen></iframe>
 						</div>
 					</li>
 				})}
