@@ -1,0 +1,11 @@
+.logoContainer {
+  background: #EDEAE3;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+  margin: 0 0 40px 0;
+  padding: 50px 20px;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+}

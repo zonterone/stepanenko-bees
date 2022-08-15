@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: column;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.mainInfoWrapper {
+  display: flex;
+  margin: 0 0 140px 0;
+}
+
+.firstBlockWrapper {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10vw 0 0;
+}
+
+.photo {
+  height: auto;
+  margin: 0 0 20px 0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+.titleSmall {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.secondBlockWrapper {
+  text-align: left;
+}
+
+.secondBlockParagraph {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.descWrapper {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.descImage {
+  margin: 0 15px 0 0;
+}
+
+.desc {
+  margin: 0;
+}
+
+.youtubeLink {
+  text-decoration: underline;
+  color: black;
+}
