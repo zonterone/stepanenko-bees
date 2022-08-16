@@ -1,21 +1,27 @@
 .container {
   display: flex;
-  max-width: 1200px;
   flex-direction: column;
+
+  max-width: 1200px;
   margin: 0 auto 200px;
   padding: 0 20px;
 }
 
 .mainInfoWrapper {
   display: flex;
+
   margin: 0 0 140px 0;
 }
 
 .firstBlockWrapper {
-  text-align: left;
   display: flex;
+  flex: 1 1 250px;
   flex-direction: column;
-  margin: 0 10vw 0 0;
+
+  max-width: 250px;
+  margin: 0 40px 0 0;
+
+  text-align: left;
 }
 
 .photo {
@@ -24,32 +30,54 @@
 }
 
 .title {
-  font-size: 20px;
-  font-weight: 500;
   margin: 0 0 5px 0;
+
+  color: #000000;
+
+  font-family: Bitter;
+  font-size: 20.9px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.title span {
+  text-transform: uppercase;
+
+  font-weight: 700;
 }
 
 .titleSmall {
-  font-size: 18px;
-  font-weight: 500;
   margin: 0;
+
+  letter-spacing: 0.02em;
+
+  font-size: 16.7px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .secondBlockWrapper {
+  flex: 2 1 65%;
+
   text-align: left;
 }
 
 .secondBlockParagraph {
-  font-weight: 500;
-  font-size: 16px;
+  color: #000000;
+
+  font-size: 16.7px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .descWrapper {
   display: flex;
-  text-align: left;
   align-items: center;
+
   max-width: 950px;
   margin: 0 auto;
+
+  text-align: left;
 }
 
 .descImage {
@@ -57,11 +85,19 @@
 }
 
 .desc {
-  font-size: 18px;
   margin: 0;
+
+  color: #000000;
+
+  font-size: 20.9px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .youtubeLink {
   text-decoration: underline;
-  color: black;
+
+  color: #000000;
+
+  font-style: italic;
 }

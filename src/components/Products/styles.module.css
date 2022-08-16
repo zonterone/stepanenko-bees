@@ -4,15 +4,17 @@
 }
 
 .description {
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
+
   max-width: 900px;
   margin: 0 auto 100px;
+  padding: 0 20px;
 }
 
 .howToBuy, .delivery {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
 }
 
@@ -23,30 +25,50 @@
 .descriptionIconWrapper {
   display: flex;
   align-items: center;
+
   height: 50px;
 }
 
 .descriptionIcon {
   width: 100%;
+  min-width: 40px;
   height: auto;
+
   object-fit: contain;
 }
 
+.textWrapper {
+  display: flex;
+  align-items: center;
+}
+
 .descriptionHyphen {
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 .descriptionText {
-  font-size: 14px;
+  text-align: left;
+
+  color: #000000;
+
+  font-size: 16.7px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.descriptionText a {
+  color: #000000;
 }
 
 .productsList {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+
+  margin: 0 auto;
+  padding: 0;
+
+  list-style-type: none;
 }
 

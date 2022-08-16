@@ -12,21 +12,30 @@ function Videos() {
 		fetch(url)
 			.then((res) => {
 				return res.json()
-			}).then((videos) => {
+			})
+			.then((videos) => {
 				setVideos(videos.items)
 			})
 	}, [])
-	
 
 	return (
 		<section className={styles.container} id="videos">
 			<ul className={styles.videosList}>
 				{videos.map((video) => {
-					return <li key={video.id} className={styles.wrapper}>
-						<div className={styles.videoWrapper}>
-							<iframe className={styles.videoItem} width="100%" height="100%" src={`https://www.youtube.com/embed/${video.contentDetails.videoId}`} frameBorder="0" allowFullScreen></iframe>
-						</div>
-					</li>
+					return (
+						<li key={video.id} className={styles.wrapper}>
+							<div className={styles.videoWrapper}>
+								<iframe
+									className={styles.videoItem}
+									width="100%"
+									height="100%"
+									src={`https://www.youtube.com/embed/${video.contentDetails.videoId}`}
+									frameBorder="0"
+									allowFullScreen
+								></iframe>
+							</div>
+						</li>
+					)
 				})}
 			</ul>
 		</section>

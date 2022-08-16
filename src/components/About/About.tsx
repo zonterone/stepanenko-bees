@@ -13,7 +13,9 @@ function About() {
 						src={photo}
 						alt="Фото Геннадия Степаненко"
 					/>
-					<h1 className={styles.title}>Геннадий СТЕПАНЕНКО</h1>
+					<h1 className={styles.title}>
+            Геннадий <span>СТЕПАНЕНКО</span>
+					</h1>
 					<h2 className={styles.titleSmall}>мастер, пчеловод</h2>
 				</div>
 				<div className={styles.secondBlockWrapper}>
@@ -49,8 +51,15 @@ function About() {
 				<p className={styles.desc}>
           Это мой официальный сайт, на&nbsp;котором размещаются фото моей
           продукции для ознакомления и&nbsp;последующего приобретения,
-          а&nbsp;так&nbsp;же видео с&nbsp;канала <a className={styles.youtubeLink} rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCy9wJunvSchJG2AjclFD6vA">&laquo;Геннадий
-          Степаненко&raquo; на&nbsp;YouTube.</a>
+          а&nbsp;так&nbsp;же видео с&nbsp;канала{' '}
+					<a
+						className={styles.youtubeLink}
+						rel="noreferrer"
+						target="_blank"
+						href="https://www.youtube.com/channel/UCy9wJunvSchJG2AjclFD6vA"
+					>
+            &laquo;Геннадий Степаненко&raquo; на&nbsp;YouTube.
+					</a>
 				</p>
 			</div>
 		</section>

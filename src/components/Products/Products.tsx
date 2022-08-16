@@ -11,25 +11,44 @@ function Products() {
 			<div className={styles.description}>
 				<div className={styles.howToBuy}>
 					<div className={styles.descriptionIconWrapper}>
-						<img src={mailIcon} alt="Иконка @" className={styles.descriptionIcon} />
+						<img
+							src={mailIcon}
+							alt="Иконка @"
+							className={styles.descriptionIcon}
+						/>
 					</div>
-					<p className={styles.descriptionText}>
-						<span className={styles.descriptionHyphen} >&#8212;</span> для приобетения продукции нужно прислать артикул товара на почту <a href="mailto:gennadystepanenko@mail.ru ">gennadystepanenko@mail.ru</a> 
-					</p>
+					<div className={styles.textWrapper}>
+						<span className={styles.descriptionHyphen}>&#8212;</span>{' '}
+						<p className={styles.descriptionText}>
+              для приобетения продукции нужно прислать артикул товара на почту{' '}
+							<a href="mailto:gennadystepanenko@mail.ru ">
+                gennadystepanenko@mail.ru
+							</a>
+						</p>
+					</div>
 				</div>
 				<div className={styles.delivery}>
 					<div className={styles.descriptionIconWrapper}>
-						<img src={deliveryIcon} alt="Грузовик доставки" className={styles.descriptionIcon}  />
+						<img
+							src={deliveryIcon}
+							alt="Грузовик доставки"
+							className={styles.descriptionIcon}
+						/>
 					</div>
-					<p className={styles.descriptionText}>
-						<span className={styles.descriptionHyphen}>&#8212;</span> после договоренности происходит отправка товара
-					</p>
+					<div className={styles.textWrapper}>
+						<span className={styles.descriptionHyphen}>&#8212;</span>
+						<p className={styles.descriptionText}>
+              после договоренности происходит отправка товара
+						</p>
+					</div>
 				</div>
 			</div>
 			<ul className={styles.productsList}>
-				{productsList.length > 0 ? productsList.map((product) => {
-					return <ProductItem key={product.id} product={product} />
-				}): null}
+				{productsList.length > 0
+					? productsList.map((product) => {
+						return <ProductItem key={product.id} product={product} />
+					})
+					: null}
 			</ul>
 		</section>
 	)
