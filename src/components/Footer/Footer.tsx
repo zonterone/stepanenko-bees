@@ -5,7 +5,9 @@ import mitzontLogo from '../../images/mitzontLogo.png'
 function Footer() {
 	return (
 		<section className={styles.container}>
-			<img src={mitzontLogo} alt="Логотип студии mitzont" />
+			<a href="https://vk.com/mit_511" rel='noreferrer' target='_blank'>
+				<img src={mitzontLogo} alt="Логотип студии mitzont" />
+			</a>
 		</section>
 	)
 }
