@@ -1,10 +1,11 @@
 import React from 'react'
-import styles from  './styles.module.css'
+import styles from './styles.module.css'
+import mitzontLogo from '../../images/mitzontLogo.png'
 
 function Footer() {
 	return (
 		<section className={styles.container}>
-			mitzont
+			<img src={mitzontLogo} alt="Логотип студии mitzont" />
 		</section>
 	)
 }

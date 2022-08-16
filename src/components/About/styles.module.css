@@ -101,3 +101,37 @@
 
   font-style: italic;
 }
+
+@media (max-width: 700px) {
+
+  .mainInfoWrapper {
+    flex-wrap: wrap;
+  }
+
+  .firstBlockWrapper {
+    flex-direction: row;
+    align-items: center;
+    max-width: unset;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .photo {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .firstBlockWrapper {
+    flex-direction: column;
+  }
+
+  .photo {
+    margin: 0 0 20px 0;
+  }
+
+  .nameWrapper {
+    margin: 0 0 20px 0;
+  }
+}

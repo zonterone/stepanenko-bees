@@ -13,10 +13,12 @@ function About() {
 						src={photo}
 						alt="Фото Геннадия Степаненко"
 					/>
-					<h1 className={styles.title}>
-            Геннадий <span>СТЕПАНЕНКО</span>
-					</h1>
-					<h2 className={styles.titleSmall}>мастер, пчеловод</h2>
+					<div className={styles.nameWrapper}>
+						<h1 className={styles.title}>
+              Геннадий <span>СТЕПАНЕНКО</span>
+						</h1>
+						<h2 className={styles.titleSmall}>мастер, пчеловод</h2>
+					</div>
 				</div>
 				<div className={styles.secondBlockWrapper}>
 					<p className={styles.secondBlockParagraph}>
