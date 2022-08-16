@@ -11,7 +11,11 @@ function Videos() {
 	useEffect(() => {
 		fetch(url)
 			.then((res) => {
-				return res.json()
+				if (res.ok) {
+					return res.json()
+				} else {
+					throw new Error()
+				}
 			})
 			.then((videos) => {
 				setVideos(videos.items)
@@ -21,7 +25,7 @@ function Videos() {
 	return (
 		<section className={styles.container} id="videos">
 			<ul className={styles.videosList}>
-				{videos.map((video) => {
+				{videos.length > 0 ? videos.map((video) => {
 					return (
 						<li key={video.id} className={styles.wrapper}>
 							<div className={styles.videoWrapper}>
@@ -36,7 +40,7 @@ function Videos() {
 							</div>
 						</li>
 					)
-				})}
+				}) :  null}
 			</ul>
 		</section>
 	)
