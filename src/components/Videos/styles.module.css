@@ -32,3 +32,9 @@
   top: 0;
   left: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 0 auto 100px;
+  }
+}

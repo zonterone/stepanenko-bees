@@ -12,7 +12,8 @@
   padding: 0 20px;
 }
 
-.howToBuy, .delivery {
+.howToBuy,
+.delivery {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -72,3 +73,21 @@
   list-style-type: none;
 }
 
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 0 auto 100px;
+  }
+
+  .howToBuy,
+  .delivery {
+    flex-direction: column;
+  }
+
+  .descriptionHyphen {
+    display: none;
+  }
+
+  .descriptionText {
+    text-align: center;
+  }
+}

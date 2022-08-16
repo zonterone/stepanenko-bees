@@ -3,7 +3,7 @@
   flex: 1 1 20%;
   flex-direction: column;
 
-  min-width: 250px;
+  min-width: 200px;
   padding: 0 20px 100px;
 
   cursor: pointer;
@@ -21,6 +21,10 @@
 
   border-radius: 20px;
   background: #bdb8aa;
+}
+
+.imageWrapper.active {
+  background: #ede9e3;
 }
 
 .container:hover .imageWrapper {

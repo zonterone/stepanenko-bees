@@ -28,7 +28,7 @@ export const productsList = [
 		id: 1,
 		item: 'К 01',
 		name: 'Корпус «Дадан» на\u00A010\u00A0рамок',
-		desc: 'в разборе',
+		desc: 'в\u00A0разборе',
 		price: 1900,
 		image: K_01
 	},
@@ -36,7 +36,7 @@ export const productsList = [
 		id: 2,
 		item: 'М 01',
 		name: 'Магазинная надставка «Дадан» на\u00A010\u00A0рамок',
-		desc: 'в разборе',
+		desc: 'в\u00A0разборе',
 		price: 1200,
 		image: M_01
 	},
@@ -66,7 +66,7 @@ export const productsList = [
 		id: 6,
 		item: 'РМ 300/2',
 		name: 'Рамка 300\u00A0мм «Евро» с\u00A04-мя отверстиями',
-		desc: 'в разборе',
+		desc: 'в\u00A0разборе',
 		price: 45,
 		image: RM_300_2
 	},
@@ -74,7 +74,7 @@ export const productsList = [
 		id: 7,
 		item: 'РМ 300/1',
 		name: 'Рамка 300\u00A0мм «Евро» без\u00A0отверстий',
-		desc: 'в разборе',
+		desc: 'в\u00A0разборе',
 		price: 42,
 		image: RM_300_1
 	},
@@ -82,7 +82,7 @@ export const productsList = [
 		id: 8,
 		item: 'РМ 145/2',
 		name: 'Рамка 145\u00A0мм «Евро» с\u00A02-мя отверстиями',
-		desc: 'в разборе',
+		desc: 'в\u00A0разборе',
 		price: 45,
 		image: RM_145_2
 	},
@@ -90,7 +90,7 @@ export const productsList = [
 		id: 9,
 		item: 'РМ 145/1',
 		name: 'Рамка 145\u00A0мм «Евро» без\u00A0отверстий',
-		desc: 'в разборе',
+		desc: 'в\u00A0разборе',
 		price: 42,
 		image: RM_145_1
 	},
@@ -105,7 +105,7 @@ export const productsList = [
 		id: 11,
 		item: 'К 02',
 		name: 'Корпус «Дадан» на\u00A010\u00A0рамок',
-		desc: 'в сборе',
+		desc: 'в\u00A0сборе',
 		price: 1950,
 		image: K_02
 	},
@@ -113,7 +113,7 @@ export const productsList = [
 		id: 12,
 		item: 'М 02',
 		name: 'Магазинная надставка «Дадан» на\u00A010\u00A0рамок',
-		desc: 'в сборе',
+		desc: 'в\u00A0сборе',
 		price: 1250,
 		image: M_02
 	},
@@ -121,7 +121,7 @@ export const productsList = [
 		id: 13,
 		item: 'К 09',
 		name: 'Корпус «Дадан» на\u00A010\u00A0рамок с\u00A0пропилом (5+5)',
-		desc: 'в сборе + комплект сколоченных рамок',
+		desc: 'в\u00A0сборе + комплект сколоченных рамок',
 		price: 2500,
 		image: K_09
 	},
@@ -129,7 +129,7 @@ export const productsList = [
 		id: 14,
 		item: 'К 03',
 		name: 'Корпус «Дадан» на\u00A010\u00A0рамок',
-		desc: 'в сборе + комплект сколоченных рамок',
+		desc: 'в\u00A0сборе + комплект сколоченных рамок',
 		price: 2450,
 		image: K_03
 	},
@@ -137,7 +137,7 @@ export const productsList = [
 		id: 15,
 		item: 'М 03',
 		name: 'Магазинная надставка «Дадан» на\u00A010\u00A0рамок',
-		desc: 'в комплекте сколоченные рамки',
+		desc: 'в\u00A0комплекте сколоченные рамки',
 		price: 1750,
 		image: M_03
 	},
@@ -145,7 +145,7 @@ export const productsList = [
 		id: 16,
 		item: 'К 04',
 		name: 'Корпус «Дадан» на\u00A010\u00A0рамок с\u00A0карманом на\u00A02\u00A0рамки',
-		desc: 'в сборе',
+		desc: 'в\u00A0сборе',
 		price: 2150,
 		image: K_04
 	},
@@ -161,7 +161,7 @@ export const productsList = [
 		id: 18,
 		item: 'К 05',
 		name: 'Корпус «Дадан» на\u00A010\u00A0рамок с\u00A0карманом на\u00A02\u00A0рамки',
-		desc: 'в разборе',
+		desc: 'в\u00A0разборе',
 		price: 2100,
 		image: K_05
 	},
@@ -169,7 +169,7 @@ export const productsList = [
 		id: 19,
 		item: 'К 08',
 		name: 'Корпус «Дадан» на\u00A010\u00A0рамок с\u00A0пропилом (5+5)',
-		desc: 'в разборе',
+		desc: 'в\u00A0разборе',
 		price: 1950,
 		image: K_08
 	},
@@ -177,7 +177,7 @@ export const productsList = [
 		id: 20,
 		item: 'К 07',
 		name: 'Корпус «Дадан» на\u00A010\u00A0рамок с\u00A0пропилом (5+5)',
-		desc: 'в сборе',
+		desc: 'в\u00A0сборе',
 		price: 2000,
 		image: K_07
 	},
@@ -200,7 +200,7 @@ export const productsList = [
 		id: 23,
 		item: 'Д 02',
 		name: 'Дно «Дадан» на\u00A010\u00A0рамок',
-		desc: 'для двухматочного (двухсемейного) метода содержания',
+		desc: 'для\u00A0двухматочного (двухсемейного) метода содержания',
 		price: 1400,
 		image: D_02
 	},

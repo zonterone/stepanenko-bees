@@ -102,8 +102,7 @@
   font-style: italic;
 }
 
-@media (max-width: 700px) {
-
+@media screen and (max-width: 700px) {
   .mainInfoWrapper {
     flex-wrap: wrap;
   }
@@ -121,7 +120,14 @@
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 0 auto 100px;
+  }
+
+  .mainInfoWrapper {
+    margin: 0 0 100px 0;
+  }
 
   .firstBlockWrapper {
     flex-direction: column;
@@ -133,5 +139,19 @@
 
   .nameWrapper {
     margin: 0 0 20px 0;
+  }
+
+  .descWrapper {
+    flex-direction: column;
+  }
+
+  .descImage {
+    margin: 0 0 20px 0;
+  }
+
+  .desc {
+    text-align: center;
+
+    font-size: 16.7px;
   }
 }

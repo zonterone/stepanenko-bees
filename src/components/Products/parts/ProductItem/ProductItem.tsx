@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css'
+import clsx from 'clsx'
 
 interface IProductItemProps {
   product: {
@@ -9,13 +10,15 @@ interface IProductItemProps {
     desc?: string;
     price: number;
     image: string;
-  };
+	}
+	onClick: () => void
+	active: boolean
 }
 
-function ProductItem({ product }: IProductItemProps) {
+function ProductItem({ product, onClick, active }: IProductItemProps) {
 	return (
-		<li className={styles.container} id="products">
-			<div className={styles.imageWrapper}>
+		<li className={styles.container} id="products" onClick={onClick}>
+			<div className={clsx(styles.imageWrapper, active && styles.active)}>
 				<img src={product.image} alt={product.name} className={styles.image} />
 				<span className={styles.productNumber}>{product.item}</span>
 			</div>

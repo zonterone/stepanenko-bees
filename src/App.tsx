@@ -6,21 +6,22 @@ import Footer from './components/Footer/Footer'
 import Logo from './components/Logo/Logo'
 import Navigation from './components/Navigation/Navigation'
 import Products from './components/Products/Products'
+import UpBtn from './components/UpBtn/UpBtn'
 import Videos from './components/Videos/Videos'
 
 function App() {
 	return (
 		<div className="App">
 			<div className="wrapper">
+				<UpBtn />
 				<Logo />
 				<Navigation />
 				<About />
 				<Products />
-				<Videos />
+				{/* <Videos /> */}
 				<Contacts />
 				<Footer />
 			</div>
-
 		</div>
 	)
 }
