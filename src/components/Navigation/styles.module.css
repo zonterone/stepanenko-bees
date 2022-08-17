@@ -3,8 +3,10 @@
   z-index: 100;
   top: 0;
 
+  transition: top .5s ease-in-out;
+
   background-color: #e2ded2;
-  box-shadow: 0px 15px 10px 0px #e2ded2;
+  box-shadow: 0px 15px 10px 10px #e2ded2;
 }
 
 .navList {
@@ -17,6 +19,13 @@
   padding: 10px 20px;
 
   list-style-type: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  width: 50%;
 }
 
 .navLink {
@@ -45,4 +54,29 @@
 
 .navLink.active {
   border: 2px solid #ffb100;
+}
+
+@media screen and (max-width: 550px) {
+  .navLink {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navList {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .wrapper:nth-child(2n) {
+    justify-content: space-around;
+
+    margin: 0;
+  }
 }
