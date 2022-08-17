@@ -23,8 +23,8 @@ import RM_145_2 from '../../images/products/RM_145_2.png'
 import DF from '../../images/products/DF.png'
 import PRD from '../../images/products/PRD.png'
 import PR from '../../images/products/PR.png'
-import PLN from '../../images/products/PR.png'
-import LVK from '../../images/products/PR.png'
+import PLN from '../../images/products/PLN.png'
+import LVK from '../../images/products/LVK.png'
 import NO_FOTO from '../../images/products/NO_FOTO.png'
 
 export const productsList = [

@@ -26,6 +26,7 @@ function Videos() {
 		<section className={styles.container} id="videos">
 			<ul className={styles.videosList}>
 				{videos.length > 0 ? videos.map((video) => {
+					console.log(video)
 					return (
 						<li key={video.id} className={styles.wrapper}>
 							<div className={styles.videoWrapper}>
@@ -34,13 +35,14 @@ function Videos() {
 									width="100%"
 									height="100%"
 									src={`https://www.youtube.com/embed/${video.contentDetails.videoId}`}
-									frameBorder="0"
+									frameBorder='0'
 									allowFullScreen
 								></iframe>
 							</div>
+							<a rel='noreferrer' target='_blank' href={`https://www.youtube.com/watch?v=${video.contentDetails.videoId}`} className={styles.videoNameLink}>{video.snippet.title}</a>
 						</li>
 					)
-				}) :  null}
+				}) : null}
 			</ul>
 		</section>
 	)

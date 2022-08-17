@@ -5,6 +5,7 @@ import styles from './styles.module.css'
 import mailIcon from '../../images/mailIcon.png'
 import deliveryIcon from '../../images/deliveryIcon.png'
 import { Viewer } from './parts/Viewer/Viewer'
+import clsx from 'clsx'
 
 function Products() {
 	const [viewer, setViewer] = useState(false)
@@ -31,7 +32,9 @@ function Products() {
 			<section className={styles.container} id="products">
 				<div className={styles.wrapper}>
 					<div className={styles.description}>
-						<h3 className={styles.descriptionTitle}>Как приобрести продукцию</h3>
+						<h3 className={styles.descriptionTitle}>
+              Как приобрести продукцию
+						</h3>
 						<div className={styles.howToBuy}>
 							<div className={styles.descriptionIconWrapper}>
 								<img
@@ -41,11 +44,12 @@ function Products() {
 								/>
 							</div>
 							<div className={styles.textWrapper}>
-								<span className={styles.descriptionHyphen}>&#8212;</span>{' '}
-								<p className={styles.descriptionText}>
-                Прислать артикул выбранного товара на почту:{' '}
+								<p className={clsx(styles.descriptionText, styles.bold)}>
+                  Прислать артикул выбранного товара
+									<br />
+                  на почту:{' '}
 									<a href="mailto:gennadystepanenko@mail.ru ">
-                  gennadystepanenko@mail.ru
+                    gennadystepanenko@mail.ru
 									</a>
 								</p>
 							</div>
@@ -59,9 +63,8 @@ function Products() {
 								/>
 							</div>
 							<div className={styles.textWrapper}>
-								<span className={styles.descriptionHyphen}>&#8212;</span>
 								<p className={styles.descriptionText}>
-                после договоренности происходит отправка товара
+                  После договоренности происходит отправка товара
 								</p>
 							</div>
 						</div>
@@ -69,7 +72,14 @@ function Products() {
 					<ul className={styles.productsList}>
 						{productsList.length > 0
 							? productsList.map((product) => {
-								return <ProductItem onClick={() => clickHandler(product.id)} key={product.id} product={product} active={imageId === product.id} />
+								return (
+									<ProductItem
+										onClick={() => clickHandler(product.id)}
+										key={product.id}
+										product={product}
+										active={imageId === product.id}
+									/>
+								)
 							})
 							: null}
 					</ul>
