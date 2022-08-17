@@ -20,7 +20,8 @@ export interface IViewer {
 		price: number
 		image: string
 	}[]
-	close: (boolean) => void
+	close: () => void
+	setImageId: (id: number | null) => void
 }
 
 export const Viewer: React.FC<IViewer> = ({
@@ -28,6 +29,7 @@ export const Viewer: React.FC<IViewer> = ({
 	close,
 	imageId,
 	products,
+	setImageId,
 }) => {
 	const prevBtn = useRef(null)
 	const nextBtn = useRef(null)
@@ -38,6 +40,12 @@ export const Viewer: React.FC<IViewer> = ({
 			navigation.prevEl = prevBtn.current
 			navigation.nextEl = nextBtn.current
 		}
+	}
+
+	const slideChangeHandler = (e) => {
+		const currentProduct = products.find((item, idx) => e.activeIndex === idx)
+		const id = currentProduct?.id !== undefined ? currentProduct.id : null
+		setImageId(id)
 	}
 
 	return isOpen ? (
@@ -66,6 +74,7 @@ export const Viewer: React.FC<IViewer> = ({
 						keyboard
 						className="viewerSwiper"
 						initialSlide={products.findIndex((item) => item.id === imageId)}
+						onSlideChange={slideChangeHandler}
 					>
 						{products.length > 0 &&
 							products.map((product) => {

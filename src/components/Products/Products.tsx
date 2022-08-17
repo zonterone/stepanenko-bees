@@ -9,7 +9,7 @@ import clsx from 'clsx'
 
 function Products() {
 	const [viewer, setViewer] = useState(false)
-	const [imageId, setImageId] = useState(null)
+	const [imageId, setImageId] = useState<number | null>(null)
 
 	const clickHandler = (index) => {
 		setImageId(index)
@@ -28,6 +28,7 @@ function Products() {
 				close={closeHandler}
 				imageId={imageId}
 				products={productsList}
+				setImageId={(id: number | null) => setImageId(id)}
 			/>
 			<section className={styles.container} id="products">
 				<div className={styles.wrapper}>
