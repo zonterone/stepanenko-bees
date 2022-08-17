@@ -46,14 +46,13 @@
   line-height: 1.2;
 }
 
-.howToBuy,
-.delivery {
+.descWrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.howToBuy {
+.descWrapper:not(:last-child) {
   margin: 0 0 40px 0;
 }
 
@@ -79,14 +78,21 @@
 }
 
 .descriptionText {
+  margin: 0;
+
   text-align: left;
+  text-decoration: none;
 
   color: #000000;
 
   font-size: 16.7px;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0;
+}
+
+.descriptionText span {
+  white-space: nowrap;
+  text-decoration: underline;
 }
 
 .descriptionText a {
@@ -136,6 +142,10 @@
 
   .howToBuy,
   .delivery {
+    flex-direction: column;
+  }
+
+  .descWrapper {
     flex-direction: column;
   }
 

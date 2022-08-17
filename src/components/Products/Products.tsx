@@ -36,7 +36,7 @@ function Products() {
 						<h3 className={styles.descriptionTitle}>
               Как приобрести продукцию
 						</h3>
-						<div className={styles.howToBuy}>
+						<div className={styles.descWrapper}>
 							<div className={styles.descriptionIconWrapper}>
 								<img
 									src={mailIcon}
@@ -55,7 +55,7 @@ function Products() {
 								</p>
 							</div>
 						</div>
-						<div className={styles.delivery}>
+						<div className={styles.descWrapper}>
 							<div className={styles.descriptionIconWrapper}>
 								<img
 									src={deliveryIcon}
@@ -67,6 +67,13 @@ function Products() {
 								<p className={styles.descriptionText}>
                   После договоренности происходит отправка товара
 								</p>
+							</div>
+						</div>
+						<div className={styles.descWrapper}>
+							<div className={styles.textWrapper}>
+								<a href='https://www.youtube.com/watch?v=yqUVJNe9nZk' className={styles.descriptionText}>
+                  Подробнее об отправке можно посмотреть в <span>видео на YouTube</span>
+								</a>
 							</div>
 						</div>
 					</div>
