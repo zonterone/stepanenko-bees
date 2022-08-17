@@ -1,15 +1,47 @@
 .container {
+  padding: 0 20px;
+
+  background: #d5d0be;
+}
+
+.wrapper {
   max-width: 1280px;
-  margin: 0 auto 200px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .description {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
-  max-width: 900px;
+  max-width: 750px;
   margin: 0 auto 100px;
-  padding: 0 20px;
+  padding: 100px 50px;
+
+  border: 4px solid #e7435f;
+  border-radius: 8px;
+}
+
+.descriptionTitle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  margin: 0;
+  padding: 0 40px;
+
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.02em;
+
+  color: #eb2b4f;
+  background: #d5d0be;
+
+  font-size: 20.9px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
 }
 
 .howToBuy,
@@ -65,7 +97,7 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   margin: 0 auto;
   padding: 0;
@@ -76,6 +108,16 @@
 @media screen and (max-width: 500px) {
   .container {
     margin: 0 auto 100px;
+  }
+
+  .description {
+    padding: 50px 20px;
+  }
+
+  .descriptionTitle {
+    font-size: 20px;
+    padding: 0 5px;
+    width: 80%;
   }
 
   .howToBuy,

@@ -3,8 +3,10 @@
   flex-direction: column;
 
   max-width: 1200px;
-  margin: 0 auto 200px;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 100px 20px 100px;
+
+  background: #e2ded2;
 }
 
 .mainInfoWrapper {
@@ -15,10 +17,10 @@
 
 .firstBlockWrapper {
   display: flex;
-  flex: 1 1 250px;
+  flex: 1 1 260px;
   flex-direction: column;
 
-  max-width: 250px;
+  max-width: 260px;
   margin: 0 40px 0 0;
 
   text-align: left;
@@ -33,17 +35,15 @@
   margin: 0 0 5px 0;
 
   color: #000000;
+  color: #000000;
 
-  font-family: Bitter;
   font-size: 20.9px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 25px;
 }
 
 .title span {
   text-transform: uppercase;
-
-  font-weight: 700;
 }
 
 .titleSmall {
@@ -52,8 +52,7 @@
   letter-spacing: 0.02em;
 
   font-size: 16.7px;
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 300;
 }
 
 .secondBlockWrapper {
@@ -63,10 +62,13 @@
 }
 
 .secondBlockParagraph {
+  letter-spacing: 0.02em;
+
+  color: #000000;
   color: #000000;
 
   font-size: 16.7px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
 }
 
@@ -89,7 +91,7 @@
 
   color: #000000;
 
-  font-size: 20.9px;
+  font-size: 16.7px;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -108,10 +110,11 @@
   }
 
   .firstBlockWrapper {
-    flex-direction: row;
     align-items: center;
-    max-width: unset;
+    flex-direction: row;
     justify-content: center;
+
+    max-width: unset;
     margin: 0;
   }
 

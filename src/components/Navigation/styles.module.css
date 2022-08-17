@@ -3,11 +3,8 @@
   z-index: 100;
   top: 0;
 
-  max-width: 1280px;
-  margin: 0 auto 50px;
-
-  background-color: #E2DED2;
-  box-shadow: 0px 15px 10px 0px #E2DED2;
+  background-color: #e2ded2;
+  box-shadow: 0px 15px 10px 0px #e2ded2;
 }
 
 .navList {
@@ -15,7 +12,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  margin: 0;
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 10px 20px;
 
   list-style-type: none;
@@ -27,7 +25,7 @@
   padding: 22px;
 
   cursor: pointer;
-  transition: border .3s ease-in-out;
+  transition: border 0.3s ease-in-out;
   text-decoration: none;
   letter-spacing: 0.04em;
 
@@ -42,10 +40,9 @@
 }
 
 .navLink:hover {
-  background: #EDEAE3;
+  background: #edeae3;
 }
 
 .navLink.active {
-  border: 2px solid #FFB100;
+  border: 2px solid #ffb100;
 }
-

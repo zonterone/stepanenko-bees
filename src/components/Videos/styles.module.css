@@ -1,6 +1,7 @@
 .container {
   max-width: 1280px;
-  margin: 0 auto 200px;
+  margin: 0 auto;
+  padding: 100px 20px;
 }
 
 .videosList {

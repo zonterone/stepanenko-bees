@@ -1,5 +1,4 @@
 import React, { createRef, useEffect, useRef, useState } from 'react'
-import logo from '../../images/logo.png'
 import styles from './styles.module.css'
 import ScrollSpy from 'react-scrollspy-navigation'
 
@@ -9,7 +8,7 @@ function Navigation() {
 
 	useEffect(() => {
 		if (header.current !== null) {
-			setOffset(header.current.offsetHeight + 20)
+			setOffset(header.current.offsetHeight)
 		}
 	}, [header])
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.css'
-// FIXME
+
 const key = process.env.REACT_APP_YOUTUBE_API_KEY
 const playlistId = process.env.REACT_APP_YOUTUBE_PLAYLIST_ID
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&maxResults=12&playlistId=${playlistId}&key=${key}`

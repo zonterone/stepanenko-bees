@@ -29,48 +29,51 @@ function Products() {
 				products={productsList}
 			/>
 			<section className={styles.container} id="products">
-				<div className={styles.description}>
-					<div className={styles.howToBuy}>
-						<div className={styles.descriptionIconWrapper}>
-							<img
-								src={mailIcon}
-								alt="Иконка @"
-								className={styles.descriptionIcon}
-							/>
-						</div>
-						<div className={styles.textWrapper}>
-							<span className={styles.descriptionHyphen}>&#8212;</span>{' '}
-							<p className={styles.descriptionText}>
-                для приобетения продукции нужно прислать артикул товара на почту{' '}
-								<a href="mailto:gennadystepanenko@mail.ru ">
+				<div className={styles.wrapper}>
+					<div className={styles.description}>
+						<h3 className={styles.descriptionTitle}>Как приобрести продукцию</h3>
+						<div className={styles.howToBuy}>
+							<div className={styles.descriptionIconWrapper}>
+								<img
+									src={mailIcon}
+									alt="Иконка @"
+									className={styles.descriptionIcon}
+								/>
+							</div>
+							<div className={styles.textWrapper}>
+								<span className={styles.descriptionHyphen}>&#8212;</span>{' '}
+								<p className={styles.descriptionText}>
+                Прислать артикул выбранного товара на почту:{' '}
+									<a href="mailto:gennadystepanenko@mail.ru ">
                   gennadystepanenko@mail.ru
-								</a>
-							</p>
+									</a>
+								</p>
+							</div>
 						</div>
-					</div>
-					<div className={styles.delivery}>
-						<div className={styles.descriptionIconWrapper}>
-							<img
-								src={deliveryIcon}
-								alt="Грузовик доставки"
-								className={styles.descriptionIcon}
-							/>
-						</div>
-						<div className={styles.textWrapper}>
-							<span className={styles.descriptionHyphen}>&#8212;</span>
-							<p className={styles.descriptionText}>
+						<div className={styles.delivery}>
+							<div className={styles.descriptionIconWrapper}>
+								<img
+									src={deliveryIcon}
+									alt="Грузовик доставки"
+									className={styles.descriptionIcon}
+								/>
+							</div>
+							<div className={styles.textWrapper}>
+								<span className={styles.descriptionHyphen}>&#8212;</span>
+								<p className={styles.descriptionText}>
                 после договоренности происходит отправка товара
-							</p>
+								</p>
+							</div>
 						</div>
 					</div>
+					<ul className={styles.productsList}>
+						{productsList.length > 0
+							? productsList.map((product) => {
+								return <ProductItem onClick={() => clickHandler(product.id)} key={product.id} product={product} active={imageId === product.id} />
+							})
+							: null}
+					</ul>
 				</div>
-				<ul className={styles.productsList}>
-					{productsList.length > 0
-						? productsList.map((product) => {
-							return <ProductItem onClick={() => clickHandler(product.id)} key={product.id} product={product} active={imageId === product.id} />
-						})
-						: null}
-				</ul>
 			</section>
 		</>
 	)

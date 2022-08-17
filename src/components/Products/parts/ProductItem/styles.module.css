@@ -4,7 +4,8 @@
   flex-direction: column;
 
   min-width: 200px;
-  padding: 0 20px 100px;
+  max-width: 300px;
+  padding: 0 20px 20px;
 
   cursor: pointer;
 }

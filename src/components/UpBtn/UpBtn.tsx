@@ -6,7 +6,7 @@ function UpBtn() {
 	const [isUpBtnVisible, setIsUpBtnVisible] = useState(false)
 
 	const checkScroll = (e) => {
-		if (e.target.defaultView?.scrollY > e.target.defaultView?.innerHeight / 2) {
+		if (e.target.defaultView?.scrollY > 500) {
 			setIsUpBtnVisible(true)
 		} else {
 			setIsUpBtnVisible(false)

@@ -1,27 +1,31 @@
-import K_01 from '../../images/products/K-01.png'
-import K_02 from '../../images/products/K-02.png'
-import K_03 from '../../images/products/K-03.png'
-import K_04 from '../../images/products/K-04.png'
-import K_05 from '../../images/products/K-05.png'
-import K_06 from '../../images/products/K-06.png'
-import K_07 from '../../images/products/K-07.png'
-import K_08 from '../../images/products/K-08.png'
-import K_09 from '../../images/products/K-09.png'
-import M_01 from '../../images/products/M-01.png'
-import M_02 from '../../images/products/M-02.png'
-import M_03 from '../../images/products/M-03.png'
-import D_01 from '../../images/products/D-01.png'
-import D_02 from '../../images/products/D-02.png'
+import K_01 from '../../images/products/K_01.png'
+import K_02 from '../../images/products/K_02.png'
+import K_03 from '../../images/products/K_03.png'
+import K_04 from '../../images/products/K_04.png'
+import K_05 from '../../images/products/K_05.png'
+import K_06 from '../../images/products/K_06.png'
+import K_07 from '../../images/products/K_07.png'
+import K_08 from '../../images/products/K_08.png'
+import K_09 from '../../images/products/K_09.png'
+import M_01 from '../../images/products/M_01.png'
+import M_02 from '../../images/products/M_02.png'
+import M_03 from '../../images/products/M_03.png'
+import D_01 from '../../images/products/D_01.png'
+import D_02 from '../../images/products/D_02.png'
 import PV from '../../images/products/PV.png'
 import KR from '../../images/products/KR.png'
 import PD from '../../images/products/PD.png'
 import PK from '../../images/products/PK.png'
-import RM_300_1 from '../../images/products/RM-300_1.png'
-import RM_300_2 from '../../images/products/RM-300_2.png'
-import RM_145_1 from '../../images/products/RM-145_1.png'
-import RM_145_2 from '../../images/products/RM-145_2.png'
+import RM_300_1 from '../../images/products/RM_300_1.png'
+import RM_300_2 from '../../images/products/RM_300_2.png'
+import RM_145_1 from '../../images/products/RM_145_1.png'
+import RM_145_2 from '../../images/products/RM_145_2.png'
 import DF from '../../images/products/DF.png'
 import PRD from '../../images/products/PRD.png'
+import PR from '../../images/products/PR.png'
+import PLN from '../../images/products/PR.png'
+import LVK from '../../images/products/PR.png'
+import NO_FOTO from '../../images/products/NO_FOTO.png'
 
 export const productsList = [
 	{
@@ -211,5 +215,53 @@ export const productsList = [
 		desc: 'металл',
 		price: 600,
 		image: PV
+	},
+	{ 
+		id: 25,
+		item: 'ПР', 
+		name: 'Перегородка в корпус «Дадан»', 
+		desc: 'фанера 3 мм', 
+		price: 100, 
+		image: PR
+	},
+	{ 
+		id: 26,
+		item: 'ПЛН', 
+		name: 'Планка на дно «Дадан»', 
+		desc: 'разделяющая дно на две части', 
+		price: 50, 
+		image: PLN
+	},
+	{ 
+		id: 27,
+		item: 'ЛВК', 
+		name: 'Летковый вкладыш «Дадан» 10 рамок', 
+		desc: 'универсальный', 
+		price: 100, 
+		image: LVK
+	},
+	{ 
+		id: 28,
+		item: 'КМП', 
+		name: 'Комплект верхних разделительных решеток и фанерных вставок', 
+		desc: 'двухматочный метод', 
+		price: 250, 
+		image: NO_FOTO
+	},
+	{ 
+		id: 27,
+		item: 'УП', 
+		name: 'Упаковка 1 улья', 
+		desc: 'необходимый материал для отправки составных частей в разобранном виде', 
+		price: 50, 
+		image: NO_FOTO 
+	},
+	{ 
+		id: 28,
+		item: 'ТК', 
+		name: 'Доставка груза до терминала ТК', 
+		desc: 'один раз в неделю', 
+		price: 450, 
+		image: NO_FOTO 
 	},
 ]
